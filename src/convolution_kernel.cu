@@ -31,7 +31,7 @@
 
 // Use the torch for GPU memory management. Thrust resize gives segfulat during
 // debugging -g #include <torch/extension.h>
-
+#include <thrust/execution_policy.h>
 #include "allocators.cuh"
 #include "convolution_kernel.cuh"
 #include "math_functions.cuh"
